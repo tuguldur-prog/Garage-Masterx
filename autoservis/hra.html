@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garage Master</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+ <header>
+    <h1>🚗 Garage Master</h1>
+    <div id="money">💰 Money: 500$</div>
+ </header>
+
+ <main id="garage">
+    <div id="gameArea">
+      <p id="jobText"></p>
+
+     <div id="lift">
+        <p id="emptyText">Empty Lift</p>
+        <img id="car" src="assets/images/car.png" alt="Car">
+     </div>
+
+    <div id="player">
+     <p ></p>
+     <img src="assets/images/man.png" alt="Player">
+    </div>
+    
+    <div class= "buttons">
+        <button id="shopBtn">🛒 Shop</button>
+        <button id="fixBtn">🔧 Fix</button>
+    </div>
+    
+ </main> 
+
+  
+
+  <div id="shopPopup" class="popup">
+    <h2>🛒 Shop</h2>
+
+    <p>🛢️ Oil - 150$</p>
+    <p>🛞 Tire - 200$</p>
+    <p>🔋 Battery - 400$</p>
+
+    <button id="buyOil">Buy Oil - $150</button>
+    <button id="buyTire">Buy Tire - $200</button>
+    <button id="buyBattery">Buy Battery - $400</button>
+
+    <button id="closeBtn">Close</button>
+  </div>
+
+ <div id="inventory">
+    🛢️ Oil: <span id="oilCount">0</span>
+    🛞 Tire: <span id="tireCount">0</span>
+    🔋 Battery: <span id="batteryCount">0</span>
+ </div>
+  <div id="messagePopup">
+    <p id="messageText"></p>
+    <button id="messageClose">OK</button>
+</div>
+
+  <script src="game.js"></script>
+
+</body>
+</html>
+
